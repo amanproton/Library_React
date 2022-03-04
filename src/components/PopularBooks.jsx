@@ -19,7 +19,7 @@ const PopularBooks = (props) => {
         <div id="popularBooks">
             {
                 books.map((value, index) => {
-                    return <a key={index} target="_blank" href={value.url} className="popularBookName">
+                    return <a key={index} target="_blank" rel="noreferrer" href={value.url} className="popularBookName">
                         <span className="bookNumber">{index+1}</span> {value.title}
                     </a>
                 })

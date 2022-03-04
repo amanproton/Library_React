@@ -9,8 +9,8 @@ const ThirdContainer = (props) =>{
 
     async function fetch(bookName) {
         let actualData = await axios.get(`https://www.dbooks.org/api/search/${bookName}`);
-        if (actualData.status == 200) {
-            if (actualData.data.books.length == 0) {
+        if (actualData.status === 200) {
+            if (actualData.data.books.length === 0) {
                 alert("No books Found !")
             }
             else {
